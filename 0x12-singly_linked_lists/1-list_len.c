@@ -7,15 +7,14 @@
  *
  * Returns: number of elements in the linked list
  */
-size_t calculate_list_length(const list_t *head)
+size_t list_len(const list_t *h)
 {
-    size_t count = 0;
+	size_t n = 0;
 
-    while (head != NULL)
-    {
-        count++;
-        head = head->next;
-    }
-
-    return count;
+	while (h)
+	{
+		n++;
+		h = h->next;
+	}
+	return (n);
 }
