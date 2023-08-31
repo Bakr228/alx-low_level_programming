@@ -8,13 +8,13 @@
  */
 size_t listint_len(const listint_t *h)
 {
-    size_t num = 0; // Initialize a counter to keep track of nodes.
+	size_t num = 0;
 
-    while (h) // Iterate through the linked list.
-    {
-        num++; // Increment the counter for each node.
-        h = h->next; // Move to the next node.
-    }
+	while (h)
+	{
+		num++;
+		h = h->next;
+	}
 
-    return (num); // Return the total number of nodes.
+	return (num);
 }
